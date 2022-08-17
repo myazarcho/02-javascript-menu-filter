@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/my-logo.png" type="image/x-icon" />  
+
+    <title>Learn Javascript</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../public/css/uikit.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <script src="public/js/uikit.min.js"></script>
+    <!-- <script src="js/moment.min.js"></script> -->
+    <script src="public/css/uikit-3.15.3/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    
+    <header>
+        <nav class="uk-navbar uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <img class="logo" src="images/my-logo.png">
+                    <span>Learn Javascript</span>
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav" uk-scrollspy-nav="closest: li; scroll: true">
+                            <li class="uk-active"><a href="#menu">Our Menu</a></li>
+                            <li><a href="#customer-review" class="">Customer Review</a></li>
+                            <li><a href="#blog">Our Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+          
+        </nav>
+    </header>
+
+   <section class="menu-container" id="menu" >
+        <div class="uk-container">
+                <div class="menu-wrap">
+                    <h1>Our Menu</h1>
+                    <div class="btn-wrap">
+                    
+                    </div>
+
+                    <div class="menu-list">
+                    
+                    
+                    </div>
+
+                    <div>
+                      <button class="uk-button" id="loadMore"> More Menu </button>
+                    </div>
+
+                </div>
+                 <!-- modal -->
+                <div class="modal-overlay" >
+                    <div class="modal-container uk-position-relative">
+                        <div class="uk-flex" id="detail_popup" data-render="popup">
+                           
+                        </div>
+                        <button type="button" class="close-btn" uk-close></button>
+                    </div>
+                </div>
+        </div>
+      
+   </section>
+
+   <section class="" id="customer-review" style="background-image: url(images/bg.jpeg);">
+        <div class="uk-container">
+            <div class="testimonial-wrap">
+                <h1>User Review</h1>
+                <div class="card-list">
+                  <article>
+                      <div class="article-wrap">
+                        <div class="img-wrap">
+                            <img src="" id="profile" alt="" />
+                          </div>
+                          <div>
+                              <h4 id="name"></h4>
+                              <p id="position"></p>
+                              <p id="review"></p>
+                          </div>
+                      </div>
+                   
+                    
+        
+                    <div class="btn-wraper">
+                      <button class="uk-button prev-btn">
+                        <span uk-icon="icon:  chevron-left;"></span>
+                      </button>
+                      <button class="uk-button next-btn">
+                        <span uk-icon="icon:  chevron-right;"></span>
+                      </button>
+        
+                    </div>
+                  </article>
+                </div>
+            </div>
+        </div>
+   
+    </section>
+
+    <section id="blog" class="blog uk-position-relative">
+        
+        <div class="uk-container">
+            <h1 class="uk-text-center">Our Blog</h1>
+            <div class="vd-wrap">
+                <video  muted autoplay loop class="video-container">
+                    <source src="images/video.mp4" type="video/mp4" />
+                </video>
+        
+                <button class="uk-button switch-btn">
+                    <span id="play">Play</span>
+                    <span id="pause">Pause</span>
+                    <span id="overlay"></span>
+                </button>
+            </div>
+           
+        </div>
+       
+    </section>
+   
+
+    
+    <!-- javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
